@@ -19,14 +19,14 @@ class MainActivity : AppCompatActivity() {
             setContentView(binding.root)
 
             //Dados para o Spinner
-            val itens = listOf("Masculino" , "Feminino")
+            val items = listOf("Masculino" , "Feminino")
 
             //Configuração do Adapter
-            val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, itens)
+            val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, items)
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_item)
 
             //Associa o adapter ao Spinner
-            binding.spinner.adapter = adapter
+            binding.genero.adapter = adapter
 
         }
 }
