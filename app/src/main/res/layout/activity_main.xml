@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/opcao"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/idade"
+        android:textColor="#470C66"
+        android:textSize="18sp"
+        android:maxLength="3"
+        android:inputType="number"
+        android:digits="0123456789"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/info"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:backgroundTint="#103268"
+        android:padding="22dp"
+        android:pointerIcon="text"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/resultado"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:backgroundTint="#E9BBFD"
+        android:padding="22dp"
+        android:pointerIcon="text"
+        />
+
+</LinearLayout>
