@@ -28,6 +28,22 @@ class MainActivity : AppCompatActivity() {
             //Associa o adapter ao Spinner
             binding.genero.adapter = adapter
 
+            //Acionando o botão CALCULAR
+            binding.info.setOnClickListener {
+                //verifica se o campo está vazio
+                if(binding.idade.text.toString().isEmpty()){
+                    //se estiver vazia, exibe comentário
+                    binding.resultado.text = "Idade não informada. Preencha o campo acima."
 
+                    //realiza a interrupção da execução
+                    return@setOnClickListener
+                }
+
+            val idade = binding.idade.text.toString().toLong() //lê a idade inserida
+
+            val sexo = binding.genero.selectedItem.toString() //lê o gênero indicado pelo usuário
+
+
+            }
         }
 }

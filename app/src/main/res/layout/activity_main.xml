@@ -25,6 +25,7 @@
         android:maxLength="3"
         android:inputType="number"
         android:digits="0123456789"
+        android:text=""
         />
 
     <Button
@@ -37,6 +38,7 @@
         android:backgroundTint="#103268"
         android:padding="22dp"
         android:pointerIcon="text"
+        android:text="CALCULAR"
         />
 
     <TextView
