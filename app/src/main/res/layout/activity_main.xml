@@ -9,10 +9,23 @@
     android:padding="16dp"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Eduarda Assis - IOT6"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="45dp"
+        tools:text="testando"
+        android:gravity="center_horizontal"
+        />
+
     <Spinner
         android:id="@+id/genero"
         android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="1dp"
         android:padding="8dp"
         />
 
@@ -25,7 +38,7 @@
         android:maxLength="3"
         android:inputType="number"
         android:digits="0123456789"
-        android:text=""
+        android:hint="Digite a idade:"
         />
 
     <Button
@@ -36,13 +49,12 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:backgroundTint="#103268"
-        android:padding="22dp"
-        android:pointerIcon="text"
-        android:text="CALCULAR"
+        android:padding="2dp"
+        android:text="Calcular"
         />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=""
         android:id="@+id/resultado"
@@ -51,7 +63,10 @@
         android:textSize="16sp"
         android:backgroundTint="#E9BBFD"
         android:padding="22dp"
-        android:pointerIcon="text"
+        tools:text="testando"
+        android:gravity="center_horizontal"
         />
+
+
 
 </LinearLayout>
