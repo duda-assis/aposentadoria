@@ -41,7 +41,7 @@
         android:hint="Digite a idade:"
         />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:id="@+id/info"
@@ -51,9 +51,12 @@
         android:backgroundTint="#103268"
         android:padding="2dp"
         android:text="Calcular"
+        app:icon="@drawable/baseline_calculate_24"
+        app:iconSize="40dp"
+        app:iconGravity="textEnd"
         />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=""
@@ -65,8 +68,9 @@
         android:padding="22dp"
         tools:text="testando"
         android:gravity="center_horizontal"
+        app:icon="@drawable/baseline_agriculture_24"
+        app:iconSize="20dp"
+        app:iconGravity="textEnd"
         />
-
-
 
 </LinearLayout>
