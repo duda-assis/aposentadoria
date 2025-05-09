@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             //Acionando o botão CALCULAR
             binding.info.setOnClickListener {
 
-                val idade = binding.idade.text.toString().toLong() //lê a idade inserida
+                val idade = binding.idade.text.toString().toLongOrNull() //lê a idade inserida
                 val sexo = binding.genero.selectedItem.toString() //lê o gênero indicado pelo usuário
 
                 if (idade != null){
